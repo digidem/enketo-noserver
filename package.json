@@ -1,0 +1,46 @@
+{
+  "name": "enketo-noserver",
+  "version": "0.0.0",
+  "description": "experiments with enketo and ODK forms in the browser",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "budo index.js --live | garnish",
+    "pack": "browserify index.js > test.js"
+  },
+  "author": "Gregor MacLennan",
+  "license": "MIT",
+  "browserify": {
+    "transform": [
+      [
+        "jstify",
+        {
+          "noMinify": true,
+          "engine": "lodash"
+        }
+      ],
+      "brfs"
+    ]
+  },
+  "dependencies": {
+    "enketo-transformer": "^1.0.8",
+    "lodash": "^3.9.3",
+    "swig": "^1.4.2",
+    "xml2js": "github:gmaclennan/node-xml2js#explicit-attrs"
+  },
+  "devDependencies": {
+    "brfs": "^1.4.0",
+    "budo": "^4.0.0",
+    "garnish": "^2.1.3",
+    "jstify": "^0.9.0",
+    "sax": "^1.1.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/digidem/enketo-noserver.git"
+  },
+  "bugs": {
+    "url": "https://github.com/digidem/enketo-noserver/issues"
+  },
+  "homepage": "https://github.com/digidem/enketo-noserver#readme"
+}

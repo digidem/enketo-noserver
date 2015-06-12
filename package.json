@@ -25,15 +25,13 @@
   "dependencies": {
     "enketo-transformer": "^1.0.8",
     "lodash": "^3.9.3",
-    "swig": "^1.4.2",
     "xml2js": "github:gmaclennan/node-xml2js#explicit-attrs"
   },
   "devDependencies": {
     "brfs": "^1.4.0",
     "budo": "^4.0.0",
     "garnish": "^2.1.3",
-    "jstify": "^0.9.0",
-    "sax": "^1.1.1"
+    "jstify": "^0.9.0"
   },
   "repository": {
     "type": "git",

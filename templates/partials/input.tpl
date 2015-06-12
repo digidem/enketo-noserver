@@ -13,7 +13,6 @@
   }
 
   var attributes = fns.bindingAttributes(fns.templateVars($, context), binding, nodeset, type)
-console.log(attributes)
   var className = ''
 
   switch (localName) {
